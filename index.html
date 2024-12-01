@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Card</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1a1a1a;
+            font-family: Arial, sans-serif;
+        }
+        .card {
+            background: linear-gradient(145deg, #111, #222);
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            animation: fadeIn 1.2s ease-out;
+            position: relative;
+        }
+        .wave {
+            font-size: 2rem;
+            animation: wave 1s infinite;
+            display: inline-block;
+        }
+        h1 {
+            margin: 10px 0;
+            font-size: 3rem;
+            background: linear-gradient(90deg, #ff7eb3, #ff758c, #ff6557);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p {
+            margin: 5px 0;
+            color: #ccc;
+        }
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .button {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+        .button:hover {
+            background: #ff6557;
+            transform: scale(1.05);
+        }
+        .contact-info {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            font-size: 0.9rem;
+        }
+        .contact-info a {
+            color: #ff758c;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes wave {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(15deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="wave">👋</div>
+        <h1>Say Hello!</h1>
+        <p>Let's Talk About Your New Projects</p>
+        <div class="buttons">
+            <a href="#" class="button">Web Design and Webflow</a>
+            <a href="#" class="button">Custom Shopify Design</a>
+            <a href="#" class="button">Landing Pages</a>
+            <a href="#" class="button">Dashboards</a>
+        </div>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:sabithvy10@gmail.com">sabithvy10@gmail.com</a></p>
+            <p>Schedule a call: <a href="https://calendly.com/designwithmikey" target="_blank">calendly.com/designwithmikey</a></p>
+        </div>
+    </div>
+</body>
+</html>
